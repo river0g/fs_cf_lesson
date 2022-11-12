@@ -15,3 +15,8 @@ scraping と db へのデータのやりとりを行うプロジェクト(練習
 ### main.py
 
 todo
+
+### 実行について
+
+実行するときは最上位の main.py に import してから使うか、特定の dir で py を実行したい(debug 時)ときは \
+`if __name__ == __main__`と`if __name__ != __main__`を使って ModuleNotFoundError が発生しないようにする。
