@@ -1,4 +1,3 @@
-from pprint import pprint
 import firebase_admin
 from firebase_admin import credentials, firestore
 
@@ -41,5 +40,10 @@ class FireStore():
         if collection_name == "" and data == None:
             return None
 
-        doc_ref = self.db.collection(collection_name).document()
+        doc_ref = (
+            self.db
+            .collection(collection_name)
+            .document("v3nJsGFuj6UuUXpVNj8W")
+        )
+
         doc_ref.set(data, merge=True)

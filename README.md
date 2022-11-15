@@ -2,6 +2,9 @@
 
 scraping と db へのデータのやりとりを行うプロジェクト(練習) \
 
+scraping は selenium で XHR を解析、json を取得する。
+selenium を使用するときに cloudfunctions
+
 ## ファイルの役割
 
 ### setup.py
